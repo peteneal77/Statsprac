@@ -1,0 +1,193 @@
+body {
+   counter-reset: ex defn theorem exercise;
+}
+
+h1 {
+  background-color: rgba(207, 0, 15, 0.2);
+  border-top: solid;
+  border-right:solid;
+  border-bottom: solid;
+  border-color: rgba(207, 0, 15, 1);
+  border-radius: 0 30px 30px 0;
+  padding-left: 5px;
+  display: table-caption;
+  width: 325%;
+}
+h1::before {
+    content: "";
+    color: rgba(207, 0, 15, 1);
+    padding-right: 10px;
+}
+
+h2 {
+  font-size: 1.4em !important
+}
+h2::before {
+    content: "";
+    color: rgba(207, 0, 15, 1);
+    padding-right: 10px;
+}
+
+
+.def {
+  background-color: rgba(207, 0, 15, 0.2);
+  background-size: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.def:before {
+  display: block;
+  content: "Definition " counter(defn) "  .";
+  counter-increment: defn; 
+  font-weight: bold;
+}
+.def p {
+  display: inline-block;
+}
+
+.ex {
+  border-left: solid;
+  border-color: rgba(207, 0, 15, 1);
+  padding-left: 10px;
+}
+.ex:before {
+  display:block;
+  text-color: rgba(207, 0, 15, 1);
+  content: "Example " counter(ex) ".";
+  counter-increment: ex;
+  font-weight: bold;
+}
+.ex p {
+  padding-left: 5px;
+  display: inline-block!important;
+}
+
+.lem:before {
+  content: "Lemma " counter(theorem) ":";
+  counter-increment: theorem; 
+  font-weight: bold;
+  display: inline-block;
+  width: -webkit-fill-available;
+}
+.lem {
+  display: block;
+  border: solid rgba(207, 0, 15, 1);
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232, 1);
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.prop:before {
+  display:block;
+  content: "Proposition " counter(h2) "." counter(theorem) ":";
+  counter-increment: theorem; 
+  border: solid rgba(207, 0, 15, 1);
+  font-weight: bold;
+  display: inline;
+}
+.prop {
+}
+.prop p {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.cor:before {
+  display:block;
+  content: "Corollary " counter(theorem) ":";
+  counter-increment: theorem; 
+  border: solid rgba(207, 0, 15, 1);
+  font-weight: bold;
+  display: inline;
+}
+.cor {
+}
+.cor p {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.thm:before {
+  content: "Theorem " counter(theorem);
+  counter-increment: theorem; 
+  font-weight: bold;
+  display: inline-block;
+  width: -webkit-fill-available;
+}
+.thm {
+  display: block;
+  border: solid rgba(207, 0, 15, 1);
+  border-radius: 10px;
+  background-color: rgba(232, 232, 232, 1);
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.exer:before {
+  content: "Exercise " counter(exercise) ": ";
+  counter-increment: exercise; 
+  color: rgba(207, 0, 15, 1);
+  font-weight: bold;
+  display: inline;
+}
+.exer {
+}
+.exer p {
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.prf:before {
+  content: "Proof: ";
+  color: rgba(207, 0, 15, 1);
+  font-weight: bold;
+  display: inline;
+}
+.prf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.prf p {
+  padding-left: 5px;
+  display: inline-block;
+}
+.prf:after {
+  content: '\220E';
+  color: rgba(207, 0, 15, 1);
+  font-size: 2em;
+  float: right;
+  vertical-align: bottom!important;
+}
+
+.ans:before {
+  content: "Solution: ";
+  color: rgba(207, 0, 15, 1);
+  font-weight: bold;
+  display: inline;
+}
+. ans {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.ans p {
+  padding-left: 5px;
+  display: inline-block;
+}
+.ans:after {
+  content: '\220E';
+  color: rgba(207, 0, 15, 1);
+  font-size: 2em;
+  float: right;
+  vertical-align: bottom!important;
+}
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Statistics Taster Session | Statistics Taster Session</title>
+  <meta name="description" content="Lecture Notes for Statistics Taster Session" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Statistics Taster Session | Statistics Taster Session" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Lecture Notes for Statistics Taster Session" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Statistics Taster Session | Statistics Taster Session" />
+  
+  <meta name="twitter:description" content="Lecture Notes for Statistics Taster Session" />
+  
+
+<meta name="author" content="Prof Peter Neal" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style_PN9.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://www.nottingham.ac.uk/pgstudy/course/taught/statistical-science-distance-learning-msc">MSc Statistical Science (Distance Learning)</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preliminaries</a></li>
+<li class="chapter" data-level="1" data-path="stats_taster.html"><a href="stats_taster.html"><i class="fa fa-check"></i><b>1</b> Statistics Taster Session</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="stats_taster.html"><a href="stats_taster.html#sec_intro"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="stats_taster.html"><a href="stats_taster.html#sec_ReedFrost"><i class="fa fa-check"></i><b>1.2</b> Reed-Frost Model</a>
+<ul>
+<li class="chapter" data-level="" data-path="stats_taster.html"><a href="stats_taster.html#households-of-size-3"><i class="fa fa-check"></i>Households of size 3</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="stats_taster.html"><a href="stats_taster.html#sec_data"><i class="fa fa-check"></i><b>1.3</b> Data</a></li>
+<li class="chapter" data-level="1.4" data-path="stats_taster.html"><a href="stats_taster.html#sec_like"><i class="fa fa-check"></i><b>1.4</b> Likelihood</a></li>
+<li class="chapter" data-level="1.5" data-path="stats_taster.html"><a href="stats_taster.html#sec_GoF"><i class="fa fa-check"></i><b>1.5</b> Goodness-of-fit</a></li>
+<li class="chapter" data-level="1.6" data-path="stats_taster.html"><a href="stats_taster.html#sec_shiny"><i class="fa fa-check"></i><b>1.6</b> Shiny App</a></li>
+<li class="chapter" data-level="1.7" data-path="stats_taster.html"><a href="stats_taster.html#extensions"><i class="fa fa-check"></i><b>1.7</b> Extensions</a>
+<ul>
+<li class="chapter" data-level="" data-path="stats_taster.html"><a href="stats_taster.html#references"><i class="fa fa-check"></i>References</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.nottingham.ac.uk/pgstudy/course/taught/statistical-science-distance-learning-msc">MSc Statistical Science (Distance Learning)</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics Taster Session</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="stats_taster" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Statistics Taster Session<a href="stats_taster.html#stats_taster" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="sec_intro" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Introduction<a href="stats_taster.html#sec_intro" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This statistics taster session provides a brief introduction to the concept of maximum likelihood estimation. This introduction is motivated by the <a href="https://en.wikipedia.org/wiki/Reed%E2%80%93Frost_model">Reed-Frost</a> epidemic model and is applied to household data collected from measles outbreak in Providence, Rhode Island between 1929-1934, see
+<a href="https://www.jstor.org/stable/984949#metadata_info_tab_contents">Wilson <em>et al.</em> (1939)</a> (also
+Bailey (1975), pages 249-254). We describe how the Reed-Frost model is defined in terms of the probability <span class="math inline">\(p\)</span> that an individual, whilst infectious, will infect a susceptible individual they live with. We explore how to choose <span class="math inline">\(p\)</span> given the data in a principled manner, and in particular, to use <a href="stats_taster.html#sec_like">Maximum Likelihood Estimation</a> to find the value of <span class="math inline">\(p\)</span> which maximises the probability of the observed data occurring. We discuss briefly the concept of <a href="stats_taster.html#sec_GoF">goodness-of-fit</a> and the question does the Reed-Frost model provide a good fit to the data? The mathematical concepts introduced in this session are explored further in the Foundations of Statistics module in the <a href="https://www.nottingham.ac.uk/pgstudy/course/taught/statistical-science-distance-learning-msc">MSc in Statistical Science (Distance Learning)</a>.</p>
+</div>
+<div id="sec_ReedFrost" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Reed-Frost Model<a href="stats_taster.html#sec_ReedFrost" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Reed-Frost model makes the following assumptions for the spread of the disease through a community.</p>
+<p>The Reed-Frost model is an example of an <span class="math inline">\(SIR\)</span> epidemic model. That is,
+individuals are assumed to be in one of three states:</p>
+<ul>
+<li><span style="color: rgba(15, 0, 207, 1);"><strong>Susceptible</strong></span> - susceptible to being infected with the disease.<br />
+</li>
+<li><span style="color: rgba(207, 0, 15, 1);"><strong>Infective</strong></span> - infected with the disease and are able to infect susceptible individuals.<br />
+</li>
+<li><strong>Removed</strong> - individuals who are no longer infectious, for example, recovered or dead, and who cannot be reinfected.</li>
+</ul>
+The only transitions in state in an <span class="math inline">\(SIR\)</span> epidemic model are:<br />
+
+<center>
+<span class="math display">\[ \mbox{Susceptible} \longrightarrow \mbox{Infective} \]</span>
+</center>
+and
+<center>
+<span class="math display">\[ \mbox{Infective} \longrightarrow \mbox{Removed}. \]</span>
+</center>
+The Reed-Frost model models the spread of the disease on a discrete time basis with each individual infectious for one time unit only. The time units are sometimes referred to as generations since an individual infectious at time <span class="math inline">\(t\)</span> (generation <span class="math inline">\(t\)</span>) will have been infected by an individual infectious at time <span class="math inline">\(t-1\)</span> (generation <span class="math inline">\(t-1\)</span>). It is assumed that each infectious individual has probability <span class="math inline">\(p\)</span> of making an infectious contact with a given susceptible, and the number of individuals an infectious individual makes contact with in a group of <span class="math inline">\(s\)</span> susceptibles follows a Binomial distribution with parameters <span class="math inline">\(s\)</span> and <span class="math inline">\(p\)</span> (<span class="math inline">\({\rm Bin} (s,p)\)</span>). That is, if <span class="math inline">\(s=2\)</span>, there are 2 susceptible individuals the probability an infective makes infectious contact with only one of the two susceptible individuals is
+<center>
+<span class="math display">\[2 p (1-p). \]</span>
+</center>
+<div id="households-of-size-3" class="section level3 unnumbered hasAnchor">
+<h3>Households of size 3<a href="stats_taster.html#households-of-size-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We illustrate how the Reed-Frost model works in households of size 3. Suppose that we have <span style="color: rgba(207, 0, 15, 1);">one initial infective</span> and <span style="color: rgba(15, 0, 207, 1);">two initial susceptibles</span>. The initial individual can infect 0, 1 or 2 of the initial susceptibles and these occur with probabilities <span class="math inline">\((1-p)^2\)</span>, <span class="math inline">\(2 p (1-p)\)</span> and <span class="math inline">\(p^2\)</span>, respectively. In the event that the initial infective infects one of the susceptibles after one time unit we have a situation where there is one infective, one susceptible and one removed individual in the household. There is then probability <span class="math inline">\(p\)</span> that the infective will infect the remaining susceptible and probability <span class="math inline">\(1-p\)</span> that the susceptible will avoid infection.</p>
+<p>The four possible outcomes for a disease outbreak in a household of size 3 and these are presented in Figure <a href="stats_taster.html#fig:RFoutcome">1.1</a>. The red individual denotes the initial infective, the green individuals denote those individuals who remain susceptible throughout the outbreak and the blue individuals are those individuals who start susceptible but become infected in the epidemic.</p>
+<div class="figure"><span style="display:block;" id="fig:RFoutcome"></span>
+<img src="RF.png" alt=" Possible outcomes in a household of size 3." width="80%" />
+<p class="caption">
+Figure 1.1:  Possible outcomes in a household of size 3.
+</p>
+</div>
+<p>A summary of the four possible outcomes and the probability of each outcome is given in the table below.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Outcome</th>
+<th align="left">No. infected</th>
+<th align="center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">A</td>
+<td align="left">1</td>
+<td align="center"><span class="math inline">\((1-p)^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">B</td>
+<td align="left">2</td>
+<td align="center"><span class="math inline">\(2p(1-p)^2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">C</td>
+<td align="left">3</td>
+<td align="center"><span class="math inline">\(p^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">D</td>
+<td align="left">3</td>
+<td align="center"><span class="math inline">\(2p^2(1-p)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>We note that both outcomes <span class="math inline">\(C\)</span> and <span class="math inline">\(D\)</span> lead to all 3 individuals being infected. Therefore if we cannot distinguish between the ways in which the epidemic takes place in a household but only classify an outbreak by its final size, the total number infected, we have that:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Final Size</th>
+<th align="center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="center"><span class="math inline">\((1-p)^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="center"><span class="math inline">\(2p(1-p)^2\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="center"><span class="math inline">\(p^2(3-2p)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For example, if <span class="math inline">\(p=0.4\)</span>, there is probability <span class="math inline">\(0.6^2 = 0.36\)</span> that the initial infective does not infect either remaining susceptible and the final size of the epidemic is 1. There is probability <span class="math inline">\(2 (0.4) 0.6^2 = 0.288\)</span> that the final size of the epidemic is 2. That is, the initial infective infects one of the initial susceptibles who in turn fails to infect the third person in the household. Finally, there is probability <span class="math inline">\(0.4^2 (3-2\times 0.4) = 0.352\)</span> that all 3 individuals in the household are infected.</p>
+</div>
+</div>
+<div id="sec_data" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Data<a href="stats_taster.html#sec_data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We apply the Reed-Frost model to the measles outbreaks in Providence, Rhode Island. The data were first reported in <a href="https://www.jstor.org/stable/984949#metadata_info_tab_contents">Wilson <em>et al.</em> (1939)</a> and investigated further in Bailey (1975). The data we consider here are measles outbreaks in 334 households of size 3.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Final Size</th>
+<th align="right">Observed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="right">34</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="right">25</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="right">275</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sec_like" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Likelihood<a href="stats_taster.html#sec_like" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span style="color: rgba(15, 0, 207, 1);"><strong>What is the probability (likelihood) that we observe the Providence data under the assumption of the Reed-Frost model?</strong></span><br />
+This is an example of a <a href="stats_taster.html#def:multinomial">multinomial distribution</a>.</p>
+<div id="def:multinomial" class="def">
+<p><span style="color: rgba(207, 0, 15, 1);"><strong>Multinomial Distribution</strong></span><br />
+Suppose that there are <span class="math inline">\(K\)</span> possible mutually exclusive outcomes for an experiment. For <span class="math inline">\(i=1,2,\ldots,K\)</span>, let <span class="math inline">\(q_i\)</span> denote the probability that outcome <span class="math inline">\(i\)</span> occurs with <span class="math inline">\(\sum_{i=1}^K q_i = 1\)</span>.</p>
+<p>Suppose that <span class="math inline">\(n\)</span> independent replicates of the experiment are performed. For <span class="math inline">\(i=1,2,\ldots,K\)</span>, let <span class="math inline">\(n_i\)</span> denote the number of occurrences of outcome <span class="math inline">\(i\)</span> with <span class="math inline">\(\sum_{i=1}^K n_i = n\)</span>.</p>
+Then the probability of observing <span class="math inline">\(\mathbf{n} =(n_1, n_2, \ldots, n_K)\)</span> is:
+<center>
+<span class="math display">\[ \frac{n!}{n_1! n_2! \ldots n_K!} q_1^{n_1} q_2^{n_2} \ldots q_K^{n_K}.\]</span>
+</center>
+<p>Note that the special case <span class="math inline">\(K=2\)</span> corresponds to the binomial distribution.</p>
+</div>
+<p>For an epidemic outbreak in a household of size 3, we have <span class="math inline">\(K=3\)</span> possible outcomes corresponding to epidemics of final size 1, 2 and 3 with probabilities <span class="math inline">\(q_1 = (1-p)^2\)</span>, <span class="math inline">\(q_2 = 2p(1-p)^2\)</span> and <span class="math inline">\(q_3 = p^2 (3-2p)\)</span>, respectively. Note the probabilities <span class="math inline">\(q_1\)</span>, <span class="math inline">\(q_2\)</span> and <span class="math inline">\(q_3\)</span> are all functions of the probability <span class="math inline">\(p\)</span> of an infective infecting a susceptible.</p>
+Thus the likelihood of observing the data <span class="math inline">\(\mathbf{n} = (n_1, n_2, n_3) = (34,25,275)\)</span> as a function of the infection probability <span class="math inline">\(p\)</span>, which we denote <span class="math inline">\(L (p; \mathbf{n})\)</span> is given by
+<center>
+<span class="math display">\[\begin{eqnarray*}
+L(p; \mathbf{n}) &amp;=&amp; \frac{n!}{n_1! n_2! n_3!} \left[ (1-p)^2 \right]^{n_1} \left[ 2 p (1-p)^2 \right]^{n_2} \left[ p^2(3- 2p) \right]^{n_3} \\
+&amp;=&amp; \frac{n!}{n_1! n_2! n_3!} 2^{n_2} p^{n_2 + 2 n_3} (1-p)^{2(n_1 + n_2)} (3-2p)^{n_3} \\
+&amp;=&amp; 2.5037 \times 10^{90} p^{575} (1-p)^{118} (3-2p)^{275}.
+\end{eqnarray*}\]</span>
+</center>
+<p><span style="color: rgba(15, 0, 207, 1);"><strong>What value of <span class="math inline">\(p\)</span> maximises <span class="math inline">\(L(p; \mathbf{n})\)</span>?</strong></span></p>
+<p>By plotting <span class="math inline">\(L(p; \mathbf{n})\)</span> as a function of <span class="math inline">\(p\)</span> in Figure <a href="stats_taster.html#fig:RFlike">1.2</a> we observe that <span class="math inline">\(L(p;\mathbf{n})\)</span> obtains its maximum at a value of <span class="math inline">\(p\)</span> close to 0.7. We can find <span class="math inline">\(\hat{p}\)</span> which maximises the likelihood by solving
+<span class="math display">\[ \frac{d \;}{dp}L(p; \mathbf{n})=0. \]</span></p>
+<div class="figure"><span style="display:block;" id="fig:RFlike"></span>
+<img src="_main_files/figure-html/RFlike-1.png" alt="Likelihood for the Providence data." width="80%" />
+<p class="caption">
+Figure 1.2: Likelihood for the Providence data.
+</p>
+</div>
+<p>It is however easier to work with <span class="math inline">\(\ell (p; \mathbf{n}) = \log L (p; \mathbf{n})\)</span>, the log-likelihood, and find the value of <span class="math inline">\(p\)</span> which maximises <span class="math inline">\(\ell (p; \mathbf{n})\)</span>. The reasons for using the log-likelihood include:</p>
+<ol style="list-style-type: decimal">
+<li>Log(arithm) is an increasing function such that <span class="math inline">\(0&lt; x &lt;y\)</span> if and only if <span class="math inline">\(\log (x) &lt; \log (y)\)</span>. Therefore the value of <span class="math inline">\(p\)</span> which maximises the log-likelihood will also maximise the likelihood.<br />
+</li>
+<li>It is usually easier to differentiate the log-likelihood than the likelihood making it <span style="color: rgba(15, 0, 207, 1);"><strong>mathematically</strong></span> preferable.<br />
+</li>
+<li>The log-likelihood is more numerically stable than the likelihood making it <span style="color: rgba(15, 0, 207, 1);"><strong>computationally</strong></span> preferable.</li>
+</ol>
+<p>In Figure <a href="stats_taster.html#fig:RFloglike">1.3</a>, we plot the log-likelihood <span class="math inline">\(\ell (p; \mathbf{n})\)</span> for the Providence data set for <span class="math inline">\(p\)</span> on the range <span class="math inline">\(0.4 &lt; p &lt; 0.99\)</span>. We observe that <span class="math inline">\(\ell (p; \mathbf{n})\)</span> obtains its maximum for <span class="math inline">\(p\)</span> close to 0.7.</p>
+<div class="figure"><span style="display:block;" id="fig:RFloglike"></span>
+<img src="_main_files/figure-html/RFloglike-1.png" alt="Likelihood for the Providence data." width="80%" />
+<p class="caption">
+Figure 1.3: Likelihood for the Providence data.
+</p>
+</div>
+<p>A numerical optimisation method, such as the <a href="https://en.wikipedia.org/wiki/Golden-section_search">Golden Section Method</a>, can be used to find <span class="math inline">\(\hat{p}\)</span> but we outline how to obtain <span class="math inline">\(\hat{p}\)</span> algebraically.</p>
+<p>Watch <a href="stats_taster.html#video">Video</a> for a derivation of the maximum likelihood estimator of <span class="math inline">\(p\)</span>.</p>
+<div id="video" class="des">
+<p><span style="color: rgba(207, 0, 15, 1);"><strong>Video: Derivation of <span class="math inline">\(\hat{p}\)</span>.</strong></span></p>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1355621/sp/135562100/embedIframeJs/uiconf_id/13188771/partner_id/1355621?iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_wlibs6f1&amp;flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&amp;wid=1_bnyxhl2b" width="720" height="435" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Reed-Frost Model FINAL VERSION">
+</iframe>
+</div>
+<p>Alternatively workings are available:</p>
+<details>
+<summary>
+<strong>Derivation of <span class="math inline">\(\hat{p} =0.7279\)</span>.</strong>
+</summary>
+Let <span class="math inline">\(A = 2.5037 \times 10^{90}\)</span>, then <span class="math inline">\(\ell (p; \mathbf{n}) = \log L (p; \mathbf{n})\)</span> is given by
+<center>
+<span class="math display">\[\begin{eqnarray}
+\ell (p; \mathbf{n}) &amp;=&amp; \log \left[ 2.5037 \times 10^{90} p^{575} (1-p)^{118} (3-2p)^{275} \right] \\
+&amp;=&amp; \log A + \log \left( p^{575}\right) + \log \left((1-p)^{118} \right) + \log \left((3-2p)^{275} \right) \\
+&amp;=&amp; \log A + 575 \log (p) + 118 \log (1-p) + 275 \log (3-2p).
+\end{eqnarray}\]</span>
+</center>
+To find <span class="math inline">\(\hat{p}\)</span>, we solve
+<center>
+<span class="math display">\[ \frac{d \;}{dp}\ell(p; \mathbf{n})=0. \]</span>
+</center>
+<p>Note that this will give a turning point in <span class="math inline">\(\ell(p; \mathbf{n})\)</span> and we need to check that this is a maximum. This can be done by studying the sign of the second derivative, <span class="math inline">\(\frac{d^2 \;}{dp^2}\ell(p; \mathbf{n})\)</span>, or by plotting the likelihood in the vicinity of <span class="math inline">\(\hat{p}\)</span>.</p>
+Thus <span class="math inline">\(\hat{p}\)</span> solves
+<center>
+<span class="math display">\[\begin{eqnarray}
+\frac{575}{p} + \frac{118(-1)}{1-p} + \frac{275(-2)}{3-2p} &amp;=&amp; 0 \\
+575 (1-p)(3-2p) -118 p (3-2p) - 550 p (1-p) &amp;=&amp; 0 \\
+1936 p^2 -3779 p + 1725 &amp;=&amp; 0.
+\end{eqnarray}\]</span>
+</center>
+There are two solutions to the quadratic <span class="math inline">\(1936 p^2 - 3779 p + 1725 =0\)</span> and these are
+<center>
+<span class="math display">\[ p = \frac{3779 \pm \sqrt{(-3779)^2-4 \times 1936 \times 1725}}{2 \times 1936} = 1.224 \mbox{ or } 0.7279. \]</span>
+</center>
+<p>Since <span class="math inline">\(p\)</span> is a probability (between 0 and 1), we have that <span class="math inline">\(\hat{p} = 0.7279\)</span>.</p>
+</details>
+</div>
+<div id="sec_GoF" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Goodness-of-fit<a href="stats_taster.html#sec_GoF" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We have found the MLE, <span class="math inline">\(\hat{p}\)</span>, which maximises the likelihood of the observed data under the assumption of the Reed-Frost model. However, an important question is:</p>
+<p><span style="color: rgba(15, 0, 207, 1);"><strong>Is the Reed-Frost model actually a good model for the Providence data set?</strong></span></p>
+<p>We can use the MLE, <span class="math inline">\(\hat{p}\)</span> to answer this question. If the Reed-Frost model with <span class="math inline">\(p = 0.7279\)</span> is appropriate for the Providence data, we would expect to observe the proportion of households with final size 1, 2 and 3 to be <span class="math inline">\(0.0740 (=(1-p)^2)\)</span>, <span class="math inline">\(0.1078 (=2 p (1-p)^2)\)</span> and <span class="math inline">\(0.8182 (=p^2 (3-2p))\)</span>, respectively. Thus the expected number of households for each final size amongst <span class="math inline">\(n=334\)</span> households of size 3 are:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Final Size</th>
+<th align="right">Expected</th>
+<th>Expected formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="right">24.73</td>
+<td><span class="math inline">\(n(1-p)^2 =334 (1-0.7279)^2\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="right">36.00</td>
+<td><span class="math inline">\(n [2 p(1-p)^2] =334 \left[2 \times 0.7279 (1-0.7279)^2 \right]\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="right">273.27</td>
+<td><span class="math inline">\(n p^2 (3-2p) =334 \times0.7279^2 (3 - 2 \times 0.7279)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The Reed-Frost model is a good fit for data if the observed number of households of each final size are <em>close</em> to the expected number of households of each final size. This raises the question of how we measure closeness, and consequently, the goodness-of-fit of the Reed-Frost model for the Providence data? We present the answer without going into the statistical details behind the goodness-of-fit statistic which is covered in the Foundations of Statistics module.</p>
+For <span class="math inline">\(i=1, 2, 3\)</span>, let <span class="math inline">\(O_i\)</span> and <span class="math inline">\(E_i\)</span> denote the observed and expected number of households with final size <span class="math inline">\(i\)</span>. We compute the test statistic:
+<center>
+<span class="math display">\[ T = \sum_{i=1}^3 \frac{(O_i -E_i)^2}{E_i}. \]</span>
+</center>
+The smaller (closer to 0) the test statistic <span class="math inline">\(T\)</span> is, the better the Reed-Frost model is at fitting the data.
+Formally, we test the null hypothesis:
+<center>
+<span class="math display">\[ H_0: \mbox{The Reed-Frost model provides a good model for the data} \]</span>
+</center>
+versus the alternative hypothesis:
+<center>
+<span class="math display">\[ H_1: \mbox{The Reed-Frost model does not provides a good model for the data} \]</span>
+</center>
+<p>Under the null hypothesis the test statistic, <span class="math inline">\(T\)</span>, follows a <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution"><span class="math inline">\(\chi\)</span>-square distribution</a> with 1 degree of freedom.</p>
+The test statistic for the Providence data is
+<center>
+<span class="math display">\[ T = \frac{(34- 24.73)^2}{24.73} +  \frac{(25- 36.00)^2}{36.00} +  \frac{(275- 273.27)^2}{273.27} = 20.33. \]</span>
+</center>
+<p>The probability of a <span class="math inline">\(\chi\)</span>-square distribution distribution with 1 degree of freedom taking a value greater than or equal to <span class="math inline">\(20.33\)</span> is <span class="math inline">\(6.52 \times 10^{-6}\)</span>. That is, there is about a 1 in 150,000 chance of observing a test statistic <span class="math inline">\(T\)</span> as large as 20.33 if the null hypothesis were true. This is highly unlikely, and hence, we reject the Reed-Frost model as a good model for the measles outbreak in Providence.</p>
+</div>
+<div id="sec_shiny" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Shiny App<a href="stats_taster.html#sec_shiny" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="https://shiny.maths.nottingham.ac.uk/pmzpn/ReedFrost/">Reed-Frost</a> R Shiny app allows you to explore the likelihood and goodness-of-fit for the Reed-Frost model applied to different datasets <span class="math inline">\(\mathbf{n}= (n_1,n_2,n_3)\)</span> of epidemic outbreaks in households of size 3. The default data is the Providence data set.</p>
+<p>In the R Shiny app there are three options for plotting the likelihood. The likelihood, log-likelihood or relative likelihood can be plotted. The relative likelihood is on a scale 0 to 1 and is given by the likelihood divided by the maximum value the likelihood obtains. Thus the plot of the relative likelihood is identical to the plot of the likelihood except the labeling on the <span class="math inline">\(y\)</span>-axis. The reason for including the relative likelihood is, that for large <span class="math inline">\(n\)</span>, the likelihood can be very small and equal to 0 for computer accuracy. However, exploiting the log-likelihood we can compute and plot the relative likelihood.</p>
+</div>
+<div id="extensions" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Extensions<a href="stats_taster.html#extensions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this illustrative example we have assumed all households are of size 3. It is straightforward, at least in principle, to allow for households of different sizes. Allowing for larger household sizes in the data makes the likelihood more complex and results in a quintic (order 5) polynomial in the case of households of size 4. Therefore for larger households numerical methods are required to find the maximum likelihood estimator.</p>
+<p>The Reed-Frost model makes the assumption that whether or not an infective infects a susceptible is <strong>independent</strong> of whether or not the infective infects another susceptible in their household. However, we might very well expect these two events to be <strong>dependent</strong> as the probability an infective infects susceptibles could depend on the severity of their case of the disease. Alternative epidemic models such as the general stochastic epidemic model allow for dependence between the probability of infecting different individuals by conditioning the probability of infection on the length of an individual’s infectious period.</p>
+<div id="references" class="section level3 unnumbered hasAnchor">
+<h3>References<a href="stats_taster.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bailey, N.T.J. (1975) <em>The Mathematical Theory of Infectious Diseases and Its Applications.</em> <span class="math inline">\(2^{nd}\)</span> edition. Griffin, London.</p>
+<p><a href="https://www.jstor.org/stable/984949#metadata_info_tab_contents">Wilson, E.B., Bennett, C., Allen, M. and Worcester, J. (1939)</a> Measles and Scarlet Fever in Providence, R. I., 1929-1934 with respect to Age and Size of Family. <em>Proc. Amer. Phil. Soc.</em> <strong>80</strong> 357-476.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
