@@ -1,0 +1,14 @@
+h1:stats_taster Statistics Taster Session
+h2:sec_intro Introduction
+h2:sec_ReedFrost Reed-Frost Model
+h3:households-of-size-3 Households of size 3
+fig:RFoutcome  Possible outcomes in a household of size 3.
+h2:sec_data Data
+h2:sec_like Likelihood
+fig:RFlike Likelihood for the Providence data.
+fig:RFloglike Likelihood for the Providence data.
+h2:sec_GoF Goodness-of-fit
+h2:sec_shiny Shiny App
+h2:extensions Extensions
+h3:references References
+

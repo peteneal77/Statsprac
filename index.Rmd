@@ -1,0 +1,32 @@
+--- 
+title: "Statistics Taster Session"
+author: "Prof Peter Neal"
+date: "University of Nottingham"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Lecture Notes for Statistics Taster Session"
+---
+
+```{r setup, echo = FALSE, results = FALSE}
+
+library(magick)
+# knitr::opts_chunk$set(fig.align = 'center') 
+colourise <- function(x, colour) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", colour, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", colour, 
+      x)
+  } else x
+}
+```
+
+# Preliminaries {-}
+
+Welcome to the free Statistics Taster Session.
+
+
+
